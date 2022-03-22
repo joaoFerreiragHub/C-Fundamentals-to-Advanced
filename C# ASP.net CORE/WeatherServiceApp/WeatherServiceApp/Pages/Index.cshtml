@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+    var weatherData = Model.Data;
+}
+
+<form method="post">
+    <label class="col-sm-3 col-form-label">Insira a cidade:</label>
+    <div class="col-sm-6"><input type="text" class="form-control" asp-for="City"></div>
+
+    <button type="submit" class="btn btn-primary mr-2">Submeter</button>
+</form>
+
+<br/>
+
+@if (weatherData != null)
+{
+    <img src="@weatherData.Icon" />
+    <ul>
+        <li>Country: @weatherData.Country</li>
+        <li>City: @weatherData.City</li>
+        <li>Temperature: @weatherData.Temperature</li>
+        <li>@weatherData.Humidity</li>
+    </ul>
+}

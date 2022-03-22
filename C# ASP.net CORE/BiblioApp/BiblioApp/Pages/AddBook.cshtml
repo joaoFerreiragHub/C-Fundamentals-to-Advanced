@@ -1,0 +1,15 @@
+﻿@page
+@model BiblioApp.Pages.AddBookModel
+@{
+  
+}
+
+<form method="post">
+    <label class="col-sm-3 col-form-label">Insira o Livro:</label>
+    
+    Title: <div class="col-sm-6"><input type="text" class="form-control" asp-for="Book.Title"></div>
+    Isbn: <div class="col-sm-6"><input type="text" class="form-control" asp-for="Book.ISBN"></div>
+    ShortDescription: <div class="col-sm-6"><input type="text" class="form-control" asp-for="Book.ShortDescription"></div>
+
+    <button type="submit" class="btn btn-primary mr-2">Submeter</button>
+</form>

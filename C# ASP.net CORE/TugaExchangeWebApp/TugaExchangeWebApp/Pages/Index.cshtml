@@ -1,0 +1,18 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Available Coins</h1>
+</div>
+
+
+<ul>
+    @foreach (var coin in Model.Coins)
+    {
+        <li>@coin.Name</li>
+        <li>@coin.Price</li>
+    }
+</ul>
