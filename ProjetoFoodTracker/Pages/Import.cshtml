@@ -1,0 +1,27 @@
+﻿@page
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model ProjetoFoodTracker.Pages.ImportModel
+@using ProjetoFoodTracker.Data.Entities
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<div class="row">
+    <div class="jumbotron">
+        <h1 class="display-4">Import the DataBase!</h1>
+        <hr class="my-4">
+    </div>
+
+    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+    {
+   
+        <form asp-page-handler="UploadtoDb" asp-route-sessioncount="10" method="post" >
+            <div class="for-group">
+                <br/>
+                <button type="submit" class="w-100 btn-primary btn-primary rounded-pill ">Import</button>
+            </div>
+               <br/>
+                <br/>
+        </form>    
+    }
+</div>
+

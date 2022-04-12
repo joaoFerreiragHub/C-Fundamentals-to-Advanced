@@ -1,0 +1,67 @@
+﻿@page
+@model ProjetoFoodTracker.Pages.MyUsers.UsersModel
+@{
+}
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Success! </strong> @TempData["Success"]
+    </div>
+    <br />
+}
+@if (TempData["Failed"] != null)
+{
+    <div class="alert alert-danger">
+        <strong>Failed! </strong> @TempData["Failed"]
+    </div>
+    <br />
+}
+
+<h1>Check Users</h1>
+<hr />
+<br />
+
+<div class="container">
+    <div class="container-fluid p-0">
+        <h1 class="h3 mb-3">Users</h1>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <div class="card-actions float-right">
+                            <div class="card-body">
+                                <table class="table table-striped" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Users</th>
+                                            <th>Email</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.AppUser)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.FirstName)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.Email)
+                                                </td>
+                                                <td>
+                                                    <form method="post" asp-route-sessioncount="15" asp-page-handler="DeleteUser" asp-route-ID="@item.Id">
+                                                        <button type="submit" class="btn btn-primary m-1">Remove Blacklisted</button>
+                                                    </form>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
