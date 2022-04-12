@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BiblioApp
+build_property.RootNamespace = BiblioApp
+build_property.ProjectDir = C:\Users\gar_e\OneDrive\Imagens\Documentos\GitHub\C# ASP.net CORE\BiblioApp\BiblioApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\gar_e\OneDrive\Imagens\Documentos\GitHub\C# ASP.net CORE\BiblioApp\BiblioApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/AddBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyBooks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlCb29rc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyBooks/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlCb29rc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyBooks/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlCb29rc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyBooks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlCb29rc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyBooks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlCb29rc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyCountries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb3VudHJpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyCountries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb3VudHJpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyCountries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb3VudHJpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyCountries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb3VudHJpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/MyCountries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb3VudHJpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/BiblioApp/BiblioApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9fx3exonrh

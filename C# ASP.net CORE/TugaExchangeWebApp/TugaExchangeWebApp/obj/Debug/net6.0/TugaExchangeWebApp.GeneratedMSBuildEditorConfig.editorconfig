@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TugaExchangeWebApp
+build_property.RootNamespace = TugaExchangeWebApp
+build_property.ProjectDir = C:\Users\gar_e\OneDrive\Imagens\Documentos\GitHub\C# ASP.net CORE\TugaExchangeWebApp\TugaExchangeWebApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\gar_e\OneDrive\Imagens\Documentos\GitHub\C# ASP.net CORE\TugaExchangeWebApp\TugaExchangeWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyCoins/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb2luc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyCoins/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb2luc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyCoins/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb2luc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyCoins/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb2luc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyCoins/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlDb2luc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyTransactions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlUcmFuc2FjdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyTransactions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlUcmFuc2FjdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyTransactions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlUcmFuc2FjdGlvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyTransactions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlUcmFuc2FjdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/MyTransactions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlUcmFuc2FjdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/Reports/FilterUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0c1xGaWx0ZXJVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gar_e/OneDrive/Imagens/Documentos/GitHub/C\# ASP.net CORE/TugaExchangeWebApp/TugaExchangeWebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-p16r59siwj
