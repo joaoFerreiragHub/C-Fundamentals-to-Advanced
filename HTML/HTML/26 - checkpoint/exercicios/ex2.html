@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercicio 2</title>
+</head>
+
+<body>
+    <form action="ex1_action.php" method="post">
+        <label>Nome</label><br>
+        <input name="nome">
+        <br><br>
+        <label>Email</label><br>
+        <input name="email">
+        <br><br>
+        <label for="telefone">Telefone</label><br>
+        <input type="tel" name="telefone">
+        <br><br>
+        <label>Assunto</label><br>
+        <select type="radio" name="assunto">
+            <option value="sugestao">Sugestão</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="informacao">Informação</option>
+        </select>
+        <br><br>
+        <label for="comment">Comentário</label><br>
+        <textarea id="comment" cols="50" rows="10" name="comentario"></textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

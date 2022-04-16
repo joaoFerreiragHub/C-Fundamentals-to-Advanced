@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+</head>
+
+<body>
+    <div>
+        <header>My Trips</header>
+    </div>
+    <div>
+        <nav>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="mytrips.html">My Trips</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </nav>
+    </div>
+    <div>
+        <form  method="post" action="contacts.php">
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome">
+    
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email">
+ 
+
+            <label for="telefone">Telefone</label><br>
+            <input type="tel" id="telefone" name="telefone">
+
+
+            <label for="assunto">Assunto</label><br>
+            <select id="assunto" name="assunto">
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="informacao">Informação</option>
+            </select>
+            <br><br>
+
+            <label for="comment">Comentário</label><br>
+            <textarea id="comment" cols="50" rows="10" name="comentario"></textarea>
+
+            <input type="submit">
+        </form>
+    </div>
+
+    <footer>@copyright Joao Ferreira </footer>
+</body>
+
+</html>
