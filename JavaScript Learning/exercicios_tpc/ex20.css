@@ -1,0 +1,40 @@
+.erro {
+  display: none;
+}
+#tabelaDados,
+#tabelaDados th,
+#tabelaDados td {
+  border: 1px solid #000;
+}
+
+#tabelaDados {
+  border-collapse: collapse;
+}
+
+#tabelaDados th,
+#tabelaDados td {
+  padding: 20px;
+}
+
+#tabelaDados thead tr {
+  background-color: black;
+  color: white;
+}
+
+#tabelaDados tbody tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+#tabelaDados tbody tr {
+  cursor: pointer;
+}
+
+#tabelaDados tbody tr:hover {
+  background-color: #666;
+  color: white;
+}
+
+#tabelaDados tfoot tr {
+  background-color: cyan;
+  text-align: right;
+}

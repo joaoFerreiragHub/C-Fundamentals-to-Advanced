@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curso>
+    <formadores>
+        <formador>
+            <nome>Pedro Remoaldo</nome>
+            <modulo>JavaScript</modulo>
+        </formador>
+    </formadores>
+    <formandos>
+        <formando>
+            <nome>Bernardo Sousa</nome>
+            <localidade>Vila Real</localidade>
+            <email>bsousa@gmail.com</email>
+        </formando>
+        <formando>
+            <nome>Joana Freitas</nome>
+            <localidade>Guimarães</localidade>
+            <email>jfreitas@gmail.com</email>
+        </formando>
+        <formando>
+            <nome>Jéssica Carvalho</nome>
+            <localidade>Braga</localidade>
+            <email>jcarvalho@gmail.com</email>
+        </formando>
+    </formandos>
+</curso>

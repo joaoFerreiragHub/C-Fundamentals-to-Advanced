@@ -1,0 +1,32 @@
+#tabelaDados,
+#tabelaDados th,
+#tabelaDados td {
+  border: 1px solid #000;
+}
+#tabelaDados {
+  border-collapse: collapse; /*pega nas 2 linhas e junta-as numa só*/
+}
+#tabelaDados th,
+#tabelaDados td {
+  padding: 20px;
+}
+#tabelaDados thead tr {
+  /* #tabelaDados th{ */
+  background-color: black;
+  color: white;
+}
+#tabelaDados tbody tr:nth-child(even) {
+  /*vou apenas às linhas do tbody tr e vou Àquelas que são as linhas pares 'nth'*/
+  background-color: #ccc;
+}
+#tabelaDados tbdoy tr {
+  cursor: pointer;
+}
+#tabelaDados tbody tr:hover {
+  background-color: #666;
+  color: white;
+}
+#tabelaDados tfoot tr {
+  background-color: cyan;
+  text-align: right;
+}

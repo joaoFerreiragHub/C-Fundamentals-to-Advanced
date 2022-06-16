@@ -1,0 +1,4 @@
+<h2>Gestão de livros</h2>
+<app-insere-livros (novoLivro)="insereLivro($event)" (livroAlterado)="alteraLivro($event)" [infoLivro]="infoLivro"></app-insere-livros>
+<app-formpesquisa (valorPesquisa)="filtraLista($event)" (limpaPesquisa)="limpa_pesquisa()"></app-formpesquisa>
+<app-tabeladados [lista]="listaLivros" (idAMostrar)="mostraId($event)" (idAEliminar)="eliminaId($event)" (idAAlterar)="editaLivro($event)"></app-tabeladados>

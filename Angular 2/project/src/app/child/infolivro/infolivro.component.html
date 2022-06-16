@@ -1,0 +1,11 @@
+<section *ngIf="livro">
+    <p><strong>Id:</strong> {{ id }}</p>
+    <p><strong>Título:</strong> {{ livro.titulo }}</p>
+    <p><strong>Editora:</strong> {{ livro.editora }}</p>
+    <p><strong>Ano de publicação:</strong> {{ livro.ano_publicacao }}</p>
+    <p><strong>Autor:</strong> {{ livro.autor }}</p>
+    <p><strong>Tipo:</strong> {{ livro.tipo }}</p>
+</section>
+<p *ngIf="!livro">Parâmetro incorrecto</p>
+<!-- <p><a routerLink="/child">Voltar à lista de livros</a></p> -->
+<p><a href="javascript:void(0)" (click)="voltarAtras()">Voltar à página anterior</a></p>

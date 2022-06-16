@@ -1,0 +1,897 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+[class*="col"] {
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.col-12 {
+  flex-basis: 100%;
+}
+
+.col-11 {
+  flex-basis: 91.666667%;
+}
+
+.col-10 {
+  flex-basis: 83.3333%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+}
+
+.col-8 {
+  flex-basis: 66.6666667%;
+}
+
+.col-7 {
+  flex-basis: 58.3333%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-5 {
+  flex-basis: 41.66666%;
+}
+
+.col-3 {
+  flex-basis: 33.33333%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+}
+
+.col-2 {
+  flex-basis: 16.666667%;
+}
+
+.col-1 {
+  flex-basis: 8.33333%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* --------------- HEADER --------------------*/
+header {
+  background-color: #f5f5f5;
+  height: 80px;
+}
+
+.logos a {
+  grid-column: 1;
+}
+
+.logos .fonts {
+  grid-column: 6;
+  display: grid;
+}
+.logo {
+  margin-right: 146px;
+}
+
+.pesquisa {
+  position: relative;
+  margin: 10px;
+}
+.login {
+  position: relative;
+  margin: 10px;
+}
+
+#logout {
+  display: none;
+}
+
+#icon {
+  margin: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+#iconl {
+  margin: 10px;
+  color: black;
+  cursor: pointer;
+}
+#icon2 {
+  margin: 10px;
+  margin-top: 10px;
+  color: black;
+}
+.autenticar i {
+  cursor: pointer;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: #f5f5f5;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #a4a3a3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.topnav a:hover {
+  background-color: #f5f5f5;
+  color: #0075be;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.displayButton {
+  display: initial;
+}
+.marginButton {
+  margin-right: 50px;
+}
+
+.cookieText {
+  background-color: #f5f5f5;
+  color: rgb(170, 170, 170);
+  float: left;
+  margin: 7px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btnAceitar {
+  margin-right: 60px;
+  background-color: #f16248;
+  color: #f5f5f5;
+  border-radius: 20px;
+  height: 30px;
+  letter-spacing: 0.5px;
+  padding: 8px 35px 0 25px;
+  text-transform: uppercase;
+  margin-left: 50px;
+  width: 153px;
+  font-size: 14px;
+}
+
+.btnAceitar:hover {
+  background-color: #f5f5f5;
+  color: #f16248;
+  border: 2px solid #f16248;
+  width: 159px;
+}
+
+/* ------------------- BODY ------------------*/
+
+.titulos {
+  font-size: 40px;
+  text-align: center;
+  color: #3c368c;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.subTittles {
+  color: #252525;
+}
+
+.toFlex {
+  margin-top: 50px;
+}
+
+.toFlexit {
+  display: flex;
+  align-items: flex-start;
+}
+
+.fitImages {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.fitImages img {
+  border-radius: 50%;
+  margin: 15px;
+  /* width: 100%; */
+  height: auto;
+}
+
+.imgMission {
+  text-align: end;
+}
+
+.texto1 {
+  color: #7d7d7d;
+}
+
+.linktxt1 {
+  color: #0075be;
+  text-decoration: none;
+  font-size: 19px;
+}
+.linktxt1:hover {
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.contentBanner {
+  position: relative;
+}
+
+.fonts {
+  display: flex;
+  justify-content: flex-end;
+}
+.banner {
+  width: 100%;
+  height: 500px;
+  background-image: url(/imagens/fundoBanner.jpg);
+}
+.separador {
+  margin-top: 50px;
+  height: 2px;
+  color: #7d7d7d;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 48px;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  color: #fff;
+  margin-left: 40px;
+}
+
+.description {
+  font-size: 30px;
+  position: absolute;
+  top: 23%;
+  left: 4%;
+  color: #ccc;
+  margin-left: 50px;
+}
+
+.slogan {
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 4%;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.btSaibaMais {
+  text-transform: uppercase;
+  position: absolute;
+  background-color: #f16248;
+  color: #f5f5f5;
+  border-radius: 30px;
+  border: 0px;
+  padding: 10px 20px;
+  top: 52%;
+  left: 7%;
+  cursor: pointer;
+}
+
+.btSaibaMais:hover {
+  background-color: #c8c8c8;
+  color: #252525;
+}
+
+.computador {
+  position: absolute;
+  right: 40px;
+  bottom: -40px;
+}
+
+.imgOferta {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  margin-bottom: 50px;
+  background-image: url(/imagens/slider.jpg);
+  background-repeat: no-repeat;
+}
+.contentor {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 5%;
+  right: 4%;
+  height: 20%;
+  width: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.contentor:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.5s ease;
+  width: 100%;
+  border-radius: 0;
+}
+
+.membroNome {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.funcaoNome {
+  font-size: 16px;
+}
+
+.equipas:hover {
+  border-radius: 0;
+  transition: 0.5s ease;
+  height: 325px;
+  width: 300px;
+}
+
+.sliderTitle {
+  position: absolute;
+  top: 35%;
+  left: 34%;
+  font-size: 42px;
+  color: #f27d29;
+}
+
+.sliderDescription {
+  position: absolute;
+  top: 42%;
+  left: 33%;
+  font-size: 35px;
+  font-weight: bold;
+  color: #153c85;
+}
+
+.sliderSlogan {
+  position: absolute;
+  top: 54%;
+  left: 35%;
+  font-size: 26px;
+  color: #153c85;
+}
+
+.toFlexOferta {
+  position: relative;
+}
+#backTop {
+  display: none;
+  position: fixed;
+  bottom: -9px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#Callme {
+  position: fixed;
+  top: 113px;
+  right: -12px;
+  z-index: 99;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 15px;
+  background-color: #252525;
+  margin: 5px;
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+#Callme:hover:after {
+  font-size: 20px;
+  content: " 919 204 462";
+  color: #0acb84;
+}
+
+.callBtn a {
+  text-decoration: none;
+}
+.phoneImg {
+  margin-right: 10px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 65px;
+  background-color: #f5f5f5;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 80%;
+  margin-left: -60px;
+  border: none;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.bemvindo {
+  display: none;
+}
+
+/* ------------------- FOOTER -----------------------------*/
+
+.footer {
+  background-color: #ebebeb;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  margin-bottom: 10px;
+}
+
+.foot > p {
+  color: #252525;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.footInfo {
+  margin-top: 15px;
+}
+.foot1list a {
+  color: #7d7d7d;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot1list a:hover {
+  text-decoration: underline;
+}
+
+.fbMargin {
+  margin-bottom: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* ----------------------------------------COOKIES-------------------------------------------- */
+
+.cookie {
+  background-color: #fff;
+  display: block;
+  padding: 15px 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000001;
+}
+
+.cookie .cookieText {
+  margin: 7px 0;
+  font-size: 14px;
+}
+
+.content-wrap {
+  max-width: 1400px;
+  position: relative;
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.CookieLink {
+  color: #0075be;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.CookieLink:hover {
+  text-decoration: underline;
+}
+
+.ShadowCookie {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 200vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000000;
+}
+.shadowLogin {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+/* -------------------FORM---------------------------------------------------------------- */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 26%;
+  right: 40%;
+  border: 3px solid #f1f1f1;
+  background-color: #000;
+  z-index: 10000002;
+}
+
+.form-container {
+  width: 318px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  padding: 2px;
+  margin: 5px 0 8px 0;
+  width: 80%;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 17px;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.btnValidar {
+  margin-top: 15px;
+  background-color: #0075be;
+  color: white;
+  padding: 11px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  margin-left: 210px;
+  border-radius: 6px;
+}
+
+#tela span {
+  position: absolute;
+  right: -10px;
+  top: -13px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid #999;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  -webkit-user-select: none;
+  user-select: none;
+  line-height: 26px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px #000;
+}
+
+/* ------------------- Media Query ------------------*/
+
+@media screen and (max-width: 1300px) {
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cookieText {
+    width: 386px;
+    background-color: #f5f5f5;
+    color: rgb(170, 170, 170);
+    float: left;
+    margin: 7px 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fitImages img {
+    width: 85%;
+  }
+  .tooltip {
+    position: unset;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .computador {
+    display: none;
+  }
+  .sliderTitle {
+    width: 100%;
+    left: 0;
+    top: 33%;
+    font-size: 23px;
+    text-align-last: center;
+  }
+
+  .sliderDescription {
+    width: 100%;
+    left: 0;
+    top: 40%;
+    font-size: 19px;
+    text-align-last: center;
+  }
+  .sliderSlogan {
+    width: 100%;
+    top: 52%;
+    left: 0px;
+    font-size: 14px;
+    text-align-last: center;
+  }
+  .fonts {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .topnav a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+  .tooltip .user {
+    margin-right: 34px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .contentBanner {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 15px;
+  }
+
+  .banner {
+    width: 100%;
+    height: 320px;
+    background-image: url(/imagens/fundoBanner.jpg);
+  }
+
+  .title {
+    top: 50px;
+    left: 12%;
+    font-size: 40px;
+  }
+
+  .description {
+    top: 110px;
+    left: 15%;
+    font-size: 24px;
+  }
+
+  .slogan {
+    left: 18%;
+    top: 150px;
+  }
+
+  .toFlex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .toFlexit {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .imgMission {
+    margin-bottom: 20px;
+  }
+
+  .fitImages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgOferta {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    background-image: url(/imagens/slider.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .sliderTitle {
+    width: 100%;
+    left: 0;
+    top: 33%;
+    font-size: 23px;
+    text-align-last: center;
+  }
+
+  .sliderDescription {
+    width: 100%;
+    left: 0;
+    top: 40%;
+    font-size: 19px;
+    text-align-last: center;
+  }
+  .sliderSlogan {
+    width: 100%;
+    top: 52%;
+    left: 0px;
+    font-size: 14px;
+    text-align-last: center;
+  }
+
+  .btSaibaMais {
+    left: 40%;
+    top: 70%;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fbMargin2 {
+    margin-bottom: 10px;
+  }
+  .fonts {
+    margin-left: 180px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    top: 71px;
+    left: 21%;
+    font-size: 26px;
+  }
+  .description {
+    left: 23%;
+    font-size: 15px;
+  }
+
+  .slogan {
+    font-size: 13px;
+    top: 140px;
+    left: 25%;
+  }
+  .sliderTitle {
+    top: 28%;
+  }
+  .fonts {
+    margin-left: 110px;
+  }
+  .logo {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .voltar {
+    display: none;
+  }
+
+  .callBtn {
+    display: none;
+  }
+  .title {
+    left: 9%;
+    font-size: 22px;
+  }
+  .description {
+    left: 12%;
+    font-size: 12px;
+  }
+  .slogan {
+    left: 15%;
+    font-size: 10px;
+  }
+  .fonts {
+    margin-left: 60px;
+  }
+  .logo {
+    margin-right: 30px;
+  }
+  .btSaibaMais {
+    left: 33%;
+    top: 70%;
+  }
+}

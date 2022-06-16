@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder - Exemplo 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="jsonplaceholder1.css">
+</head>
+<body>
+    <form id="formPesquisa">
+        <p><label for="pesquisa">Pesquisa:</label> <input type="search" id="pesquisa"> <input type="submit" id="btPesquisa" value="Pesquisar"> <input type="button" id="btLimpaPesquisa" value="Limpar pesquisa"></p>
+    </form>
+    <p>
+       <label for="userid">UserId:</label> <select id="userid">
+           <option value="">-- Seleccione o utilizador --</option>
+           <!-- <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+           <option value="9">9</option>
+           <option value="10">10</option> -->
+       </select>
+    </p>
+    <table id="tabelaDados">
+        <thead>
+            <tr>
+                <th>userId</th>
+                <th>Title</th>
+                <th>Body</th>
+                <th>Operações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total de posts: <span id="totalPosts"></span></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <section id="tela">
+        <section>
+            <section id="userInfo">
+                
+            </section>
+            <span>X</span>
+        </section>
+    </section>
+    <script src="jsonplaceholder1.js"></script>
+</body>
+</html>

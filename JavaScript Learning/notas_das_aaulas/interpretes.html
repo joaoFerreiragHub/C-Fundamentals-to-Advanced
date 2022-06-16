@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON - Interpretes</title>
+    <link rel="stylesheet" href="interpretes.css" />
+  </head>
+  <body>
+    <h2>Registo de Intérpretes</h2>
+    <form id="formRegistos">
+      <p><label for="nome">Nome</label><input type="text" id="nome" /></p>
+      <p>
+        <label for="genero">Género</label
+        ><select id="genero"></select>
+      </p>
+      <p>
+        <label for="ano_nascimento">Ano de Nascimento</label
+        ><input type="number" id="ano_nascimento" />
+      </p>
+      <p><label for="ListaTipos">Tipo</label><span id="listaTipos"></span></p>
+      <p><input type="button" id="btRegistar" value="Registar Intérprete" /></p>
+    </form>
+    <table id="tabelaDados">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Genero</th>
+          <th>Ano Nascimento</th>
+          <th>Tipo</th>
+          <th>Operações</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">
+            Total de Interpretes: <span id="totalInterpretes"></span>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <script src="interpretes.js"></script>
+  </body>
+</html>

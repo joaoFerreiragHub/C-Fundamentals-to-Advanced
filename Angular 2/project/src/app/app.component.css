@@ -1,0 +1,23 @@
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+header nav li {
+    display: inline;
+}
+header nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header nav a:hover {
+    background-color: red;
+    color: white;
+}
+.activa {
+    background-color: red;
+    color: white;
+}

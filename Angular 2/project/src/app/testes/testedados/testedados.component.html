@@ -1,0 +1,53 @@
+<section>{{ listaPessoas | json}}</section>
+<pre>{{ listaPessoas | json}}</pre>
+<!-- # - Template Reference Variable -->
+<!-- (input) ou (keyup) -->
+<p><label for="pesquisa">Pesquisa:</label> <input type="text" #nomepesquisa id="pesquisa" (input)="processa_pesquisa(nomepesquisa.value)"> <button type="button" (click)="processa_pesquisa(nomepesquisa.value)">Pesquisar</button> <button type="button" (click)="limpa_pesquisa();nomepesquisa.value=''">Limpar pesquisa</button></p>
+<p *ngIf="listaPessoas.length===0">Não existem dados na tabela de Pessoas.</p>
+<table id="tabelaDados" *ngIf="listaPessoas.length!==0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Localidade</th>
+            <th>Casado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pessoa of listaPessoas" (click)="mostraId(pessoa.id!)">
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.localidade }}</td>
+            <!-- <td>{{ pessoa.casado }}</td> -->
+            <!-- <td>{{ pessoa.casado ? '&#10004;' : '&#10005;' }}</td> -->
+            <!-- <td *ngIf="pessoa.casado">&#10004;</td>
+            <td *ngIf="!pessoa.casado">&#10005;</td> -->
+            <!-- <td> -->
+                <!-- <span *ngIf="pessoa.casado">&#10004;</span> -->
+                <!-- <ng-container *ngIf="pessoa.casado">&#10004;</ng-container>
+                <ng-container *ngIf="!pessoa.casado">&#10005;</ng-container>
+            </td> -->
+            <!-- <td>
+                <ng-container *ngIf="pessoa.casado; else naoCasado">&#10004;</ng-container>
+                <ng-template #naoCasado>&#10005;</ng-template>
+            </td> -->
+            <!-- <td>
+                <ng-container *ngIf="pessoa.casado; then casado; else naoCasado"></ng-container>
+                <ng-template #casado>&#10004;</ng-template>
+                <ng-template #naoCasado>&#10005;</ng-template>
+            </td> -->
+            <td>
+                <ng-container [ngSwitch]="pessoa.casado">
+                    <ng-container *ngSwitchCase="true">&#10004;</ng-container>
+                    <ng-container *ngSwitchCase="false">&#10005;</ng-container>
+                    <ng-container *ngSwitchDefault>-</ng-container>
+                </ng-container>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Total de pessoas: {{ listaPessoas.length }}</td>
+        </tr>
+    </tfoot>
+</table>

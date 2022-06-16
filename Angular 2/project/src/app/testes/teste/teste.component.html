@@ -1,0 +1,30 @@
+<!-- one-way binding - class -> template -->
+<p>Nome do componente: {{ nome_componente }}</p>
+<p>Nome do componente: {{ nome_componente.toUpperCase() }}</p>
+<p>Nome do componente: {{ nome_componente.toUpperCase().split("").reverse().join("") }}</p>
+<p>Nome do componente: {{ nome_componente2 }}</p>
+<!-- Utilização de pipes -->
+<p>Nome do componente: {{ nome_componente | uppercase }}</p>
+<p>Nome do componente: {{ nome_componente | lowercase }}</p>
+<p>Nome do componente: {{ nome_componente | titlecase }}</p>
+<p>Nome do componente: {{ mostrar_nome_componente() }}</p>
+<p>O formador mora em Ermesinde? {{ localidade==="Ermesinde" ? 'Sim' : 'Não' }}</p>
+<!-- <p>O formador mora em Ermesinde? {{ (localidade==="Ermesinde") ? 'Sim' : 'Não' }}</p> -->
+
+<p><img src="/assets/landscape.jpg" alt="Landscape" class="foto"></p>
+<p><img src="{{ imagem1 }}" class="foto"></p>
+<p><img src="/assets/{{imagem2}}" class="foto"></p>
+<!-- property binding -->
+<p><img [src]="imagem1" class="foto"></p>
+<p><img [src]="'/assets/landscape.jpg'" class="foto"></p>
+
+<!-- one-way binding - template -> class -->
+<p><button type="button" (click)="muda_imagem()">Muda imagem</button></p>
+
+<!-- collapsible -->
+<p><button type="button" (click)="mostra_collapse()">{{ collapse_escondido ? 'Mostra' : 'Esconde' }}</button></p>
+<section class="conteudo" [hidden]="collapse_escondido">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum porro cum sed asperiores ex quasi sequi? Odio, provident, itaque vero quas quibusdam, placeat accusantium cupiditate blanditiis iusto excepturi asperiores voluptas!</section>
+
+<!-- utilizando uma directiva estrutural / structural directive -->
+<p><button type="button" (click)="mostra_collapse2()">{{ collapse_visivel ? 'Esconde' : 'Mostra' }}</button></p>
+<section class="conteudo" *ngIf="collapse_visivel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum porro cum sed asperiores ex quasi sequi? Odio, provident, itaque vero quas quibusdam, placeat accusantium cupiditate blanditiis iusto excepturi asperiores voluptas!</section>

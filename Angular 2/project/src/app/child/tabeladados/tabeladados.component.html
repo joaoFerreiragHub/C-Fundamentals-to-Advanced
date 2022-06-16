@@ -1,0 +1,31 @@
+<p *ngIf="lista.length===0">Não existem dados na tabela de Livros.</p>
+<table id="tabelaDados" *ngIf="lista.length!==0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Editora</th>
+            <th>Ano de publicação</th>
+            <th>Autor</th>
+            <th>Tipo</th>
+            <th>Operações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let livro of lista" (click)="mostraId(livro.id!)">
+            <td>{{ livro.id }}</td>
+            <td>{{ livro.titulo }}</td>
+            <td>{{ livro.editora }}</td>
+            <td>{{ livro.ano_publicacao }}</td>
+            <td>{{ livro.autor }}</td>
+            <td>{{ livro.tipo }}</td>
+            <td><a href="javascript:void(0);" class="tabela_livro_icone" (click)="eliminaLivro(livro.id!,$event)">&#10005;</a>&nbsp;<a href="javascript:void(0);" class="tabela_livro_icone" (click)="alteraLivro(livro.id!,$event)">&#9998;</a></td>
+
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="7">Total de pessoas: {{ lista.length }}</td>
+        </tr>
+    </tfoot>
+</table>

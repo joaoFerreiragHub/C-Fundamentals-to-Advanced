@@ -1,0 +1,9 @@
+#listaTarefas li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.terminada {
+    text-decoration: line-through;
+}

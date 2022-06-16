@@ -1,0 +1,20 @@
+<!-- Template variable - variable interpolation -->
+<header>
+    <h1>{{ title }}</h1>
+    <nav>
+        <ul>
+            <li><a routerLink="" routerLinkActive="activa" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+            <!-- <li><a href="testes">Testes(com href)</a></li> -->
+            <li><a routerLink="testes"  routerLinkActive="activa">Testes</a></li>
+            <li><a routerLink="testesdados" routerLinkActive="activa">Testesdados</a></li>
+            <li><a routerLink="cards" routerLinkActive="activa">Cards</a></li>
+            <li><a routerLink="child" routerLinkActive="activa">Child</a></li>
+            <li><a routerLink="posts" routerLinkActive="activa">Posts</a></li>
+            <!-- <li><a [routerLink]="['child']">Child</a></li> -->
+            <li><a [routerLink]="['child',1]">Child 1</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>

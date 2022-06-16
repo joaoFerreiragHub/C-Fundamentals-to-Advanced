@@ -1,0 +1,33 @@
+<h3>Registo de livros</h3>
+<form [formGroup]="formLivros" (ngSubmit)="insereLivro()">
+    <p><label for="titulo">Título:</label> <input type="text" id="titulo" formControlName="titulo"></p>
+    <!-- value="{{ (infoLivro) ? infoLivro.titulo : ''}}" -->
+
+    <small *ngIf="formLivros.get('titulo')!.touched && formLivros.get('titulo')!.invalid">
+        <span *ngIf="titulo.errors?.['required']">O campo 'Título' é de preenchimento obrigatório!</span>
+        <span *ngIf="titulo.hasError('minlength')">O campo 'Título' tem de ter, no mínimo, 3 caracteres!</span>
+    </small>
+    <!-- <small *ngIf="formLivros.get('titulo')!.touched && formLivros.get('titulo')!.invalid && titulo.hasError('required')
+    ">O campo 'Título' é de preenchimento obrigatório!</small>
+
+    <small *ngIf="formLivros.get('titulo')!.touched && formLivros.get('titulo')!.invalid && titulo.hasError('minlength')">O campo 'Título' tem de ter, no mínimo, 3 caracteres!</small> -->
+
+    <p><label for="editora">Editora:</label> <input type="text" id="editora" formControlName="editora"></p>
+    <p><label for="ano_publicacao">Ano de publicação:</label> <input type="number" id="ano_publicacao" formControlName="ano_publicacao"></p>
+    <p><label for="autor">Autor:</label> <input type="text" id="autor" formControlName="autor"></p>
+    <p><label for="tipo">Tipo:</label> <select id="tipo" formControlName="tipo">
+        <option value="">-- Seleccione um tipo --</option>
+        <!-- <option value="{{tipo}}" -->
+        <option [ngValue]="tipo" *ngFor="let tipo of tipos">{{ tipo }}</option>
+        <!-- <option value="Biografia">Biografia</option>
+        <option value="Literatura Juvenil">Literatura Juvenil</option>
+        <option value="Humor">Humor</option>
+        <option value="Policial e Thriller">Policial e Thriller</option> -->
+    </select></p>
+    <p><input type="submit" value="{{ (emInsercao) ? 'Registar livro' : 'Alterar livro' }}" [disabled]="formLivros.invalid"> <input *ngIf="!emInsercao" type="button" (click)="cancelarAlteracao()" value="Cancelar"></p>
+</form>
+<pre>{{ formLivros.value | json }}</pre>
+<pre>Formulário válido: {{ formLivros.valid }}</pre>
+<pre>Estado do formulário: {{ formLivros.status }}</pre>
+<pre>Campo 'título' válido: {{ formLivros.get('titulo')!.valid | json }}</pre>
+<pre>{{ infoLivro | json }}</pre>

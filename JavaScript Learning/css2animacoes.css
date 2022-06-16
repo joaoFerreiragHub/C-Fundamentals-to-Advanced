@@ -1,0 +1,34 @@
+.poligono {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+#rodar {
+  transition: transform 2s;
+}
+#rodar:hover {
+  transform: rotate(30deg);
+}
+#skew {
+  transform: transform 1s;
+}
+#skew :hover {
+  transform: skew(-45deg);
+}
+#scale {
+  transform: scale(2);
+}
+#translate {
+  transform: translateX(500px);
+}
+
+#multiple {
+  transition: all 2s;
+}
+
+#multiple:hover {
+  transform: translateX(500px) rotate(720deg);
+  background-color: red;
+  width: 400px;
+}

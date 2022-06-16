@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRIMAVERA Business Software Solutions”</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="projeto1.css" />
+  </head>
+  <body>
+      <header id="header">
+          <div id="policy" class="cookie fixed">
+            <div class="content-wrap">
+                <span class="cookieText">Este website utiliza cookies para melhorar a sua experiência de navegação. Para continuar a navegar, deve ler e aceitar os   <a class="CookieLink" target="_blank" href="https://pt.primaverabss.com/pt/site/termos-de-utilizacao/">Termos e Condições.</a>
+                </span><a class="btnAceitar">Li e aceito > </a>
+            </div>
+          </div>
+          <div class="ShadowCookie"></div>
+          <div class="row">        
+              <div class="logo col-8">
+                <a href="https://pt.primaverabss.com/pt/."><img src="/imagens/logotipo.png" /></a> 
+              </div>  
+              <p id="bemVindo"></p>
+              <div class="fonts col-1">
+                  <div class="tooltip">
+                    <i
+                      id="iconl"
+                      class="fa-solid fa-magnifying-glass tooltipText"
+                      data-tooltip="Pesquisa"
+                      alt="Pesquisa"
+                    ></i>
+                    <span class="tooltiptext">Pesquisa</span>
+                  </div> 
+
+                
+                  <div  class="tooltip user" onload='document.form1.focus()'>
+                    <div id="autenticar">
+                        <a onclick="openForm()"><i
+                          id="icon"
+                          class="fa-regular fa-user tooltip"
+                          alt="Login"
+                        ></i></a>
+                  <button class="tooltiptext" id="login" ">Login</button>
+                </div>
+                  <div id="logout" hidden>
+                  <a href="javascript:void(0);" class="icon2" onclick="logoutf()">
+                    <i id="icon2" class="fa-solid fa-arrow-right-from-bracket"></i>
+                  </a>               
+                  <button class="tooltiptext">Logout</button>
+                </div>
+
+                <div class="form-popup " id="myForm">
+                    <div class="shadowLogin"></div>   
+                      <form action=""  id="form" class="form-container" name="form1"  novalidate>
+                            <h3>Controlo de Acessos</h3>
+                            <p id="emailPswError"></p>
+                            <p id="emailError"></p>
+                            <p id="autentica"></p>                       
+                            <label><strong>E-mail: </strong></label><input type="text" name="usrname" id="email" onclick="limparemail();" required>
+                            <br>
+                            <label><strong>Senha: </strong></label><input type="password" name="psword" id="psword" onclick="limparpass();"required>                         
+                            </p>
+                            <input type="submit" class="btnValidar" value="Validar" onclick="validUsers()">
+                      </form>
+                      <section id="tela">
+                            <section>
+                              <span>X</span>
+                            </section>
+                      </section>                                 
+                  </div>
+                </div>       
+              </div>            
+            </div>  
+          
+        <div class="topnav" id="myTopnav">
+          <a href="#home">Contabilistas</a>
+          <a href="#news">Setor Privado</a>
+          <a href="#contact">Setor Público</a>
+          <a href="#https://pt.primaverabss.com/pt/pagina/academy/">Formação</a>
+          <a href="https://pt.primaverabss.com/pt/pagina/parceiros/">Parceiros</a>
+          <a href="#https://pt.primaverabss.com/pt/pagina/jobs/">Carreiras</a>
+          <a class="icon" onclick="btnBurger()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+
+      </header>
+
+      <section class="contentBanner">
+        <div class="banner"></div>
+          <p class="title"><strong>Tecnologia para vencer</strong></p>
+          <p class="description">Conheça os casos de sucesso PRIMAVERA</p>
+          <p class="slogan">
+            <em
+              ><strong>Na linha da frente na digitalização de empresas</strong>
+            </em>
+          </p>
+          <input type="button" class="btSaibaMais" onclick="location.href='https://pt.primaverabss.com/pt/pagina/tecnologia-para-vencer/'" value="SAIBA MAIS >" />
+          <img src="/imagens/computador.png" class="computador" />
+        </section>
+
+      <section>
+        <div class="toFlex">
+          <p class="titulos">Missao</p>
+        <div class="toFlexit">
+                  <div class="col-3 imgMission">
+                    <img src="/imagens/missao.jpg"/>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="mission  col-8">
+                 
+                      <p class="subTitles"><strong>Simplificar a vida nas organizações, aumentando a criação de valor, é a nossa grande missão.</p></strong><br>
+
+                            <div class="texto1">
+                            <p>Desafiar o desconhecido. Explorar possibilidades. Transpor barreiras. Inovar. São estas as motivações que desde 1993 nos conduzem na busca de soluções de gestão inovadoras que simplificam a vida nas organizações.</p>
+                            <br>
+                            <p>A paixão pela inovação na gestão empresarial está no ADN da PRIMAVERA. Um entusiasmo contagiante que colocamos ao serviço das organizações, disponibilizando-lhes um leque crescente de soluções de gestão que agilizam as operações e aumentam a rentabilidade do negócio.</p>
+                            <br>
+                            <p>Acreditamos na força das ideias. Auxiliamos a sua concretização. Impulsionamos os resultados. Defendemos que com a tecnologia certa, crescer é o caminho. Do mais pequeno micronegócio a uma grande multinacional, disponibilizamos soluções ajustadas, ágeis e funcionais que dão mais força ao negócio.</p>
+                            <br>
+                          </div>
+
+                      <p>» <strong><a class="linktxt1" href="http://"> Conheça a nossa brochura institucional</a></strong></p>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <hr class="separador">
+
+    <section>
+        <div class="toFlex">
+          <p class="titulos">Equipa</p>
+          <div class="fitImages">
+              <div class="contentor">
+              <img class="equipas" src="/imagens/foto1.png" alt="Avatar"/>
+                    <div class="overlay">
+                      <div class="text">
+                        <p class="membroNome">Daniela Alves </p> 
+                        <p class="funcaoNome">Web Developer</p>
+                      </div>
+                    </div>
+              </div>
+              <div class="contentor"> 
+              <img class="equipas" src="/imagens/foto2.png" alt="Avatar"/>
+                  <div class="overlay">
+                    <div class="text">
+                        <p class="membroNome">Manuela Ribeiro</p> 
+                        <p>Front-end developer</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="contentor">       
+                <img class="equipas" src="/imagens/foto3.png" alt="Avatar"/>
+                <div class="overlay">
+                  <div class="text">
+                    <p class="membroNome">Bruna Silva</p>
+                    <p> Designer</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+       </div>
+  </section>
+  
+    <hr class="separador">
+
+    <section>
+      <div class="toFlex">
+        <p class="titulos">Oferta formativa</p>
+      <div class="toFlexOferta">
+            <img src="/imagens/slider.jpg" class="imgOferta"/>
+            <div >
+            <p class="sliderTitle"><strong>PRIMAVERA Academy</strong></p>
+            <p class="sliderDescription">Juntos seremos mais fortes!</p>
+            <p class="sliderSlogan">Aposte em novas competências</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+      <button class="voltar"><input onclick="topFunction()" id="backTop" title="Go to top" type="image" src="/imagens/setacima.png"></input></button>
+      <button class="callBtn" id="Callme">
+        <a href="tel:919204462">
+            <img class="phoneImg"src="/imagens/telefone.png"/>
+        </a> 
+      </button>
+
+      <footer class="footer">
+        <div class="foot">
+          <p>PRIMAVERA</p>
+            <div class="foot1list">
+              <a class="footInfo" href="/">Sobre a PRIMAVERA</a>
+              <a class="footInfo" href="/">Responsabilidade Social</a>
+              <a class="footInfo" href="/">Recrutamento</a>
+              <a class="footInfo" href="/">Os nossos Clientes</a>
+              <a class="footInfo" href="/">Referral Members</a>
+              <a class="footInfo" href="/">Consultoria</a>
+              <a class="footInfo" href="/">Suporte</a>
+              <a class="footInfo" href="/">Blog</a>
+              <a class="footInfo" href="/">Developers Network</a>
+              <a class="footInfo" href="/">HelpCenter</a>
+              <a class="footInfo fbMargin" href="/">MarketPlace</a>
+            </div>
+        </div>
+        <div class="foot">
+           <p>EDUCATION</p>
+          <div class="foot1list">
+              <a class="footInfo" href="/">Teaching with Software</a>
+              <a class="footInfo" href="/">Education Talks</a>
+              <a class="footInfo" href="/">Education Labs</a>
+              <a class="footInfo" href="/">Study Visits</a>
+              <a class="footInfo" href="/">Formação de Docentes</a>
+          </div>
+      </div>
+      <div class="foot">
+          <p>NOTICIAS E EVENTOS</p>
+        <div class="foot1list">
+          <a class="footInfo" href="/">Press Releases</a>
+          <a class="footInfo" href="/">Eventos e Webinars</a>
+          <a class="footInfo" href="/">Blog</a>
+          <a class="footInfo" href="/">Newsletter</a>
+        </div>
+      </div>
+      <div class="foot">
+            <p>CONTACTOS</p>
+          <div class="foot1list">
+            <a class="footInfo" href="/">Como Chegar</a>
+            <a class="footInfo" href="/">Contactar agora</a>
+          </div>
+        </div>
+        <div class="foot">
+          <p>SITE</p>
+        <div class="foot1list">
+          <a class="footInfo" href="/">Política de Privacidade</a>
+          <a class="footInfo" href="/">Termos de Utilização</a>
+          <a class="footInfo fbMargin2" href="/">Mapa do Site</a>
+         </div>
+        </div>
+      </footer>
+
+    <script src="/projeto1.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

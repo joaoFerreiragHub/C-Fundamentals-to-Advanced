@@ -1,0 +1,25 @@
+{
+    "interpretes" : [
+        {
+            "id": 1,
+            "nome": "Cuca Roseta",
+            "genero": "Fado",
+            "ano_nascimento": 1990,
+            "tipo": "Solo"
+        },
+        {
+            "id": 2,
+            "nome": "Queen",
+            "genero": "Rock",
+            "ano_nascimento": 1970,
+            "tipo": "Grupo"
+        },
+        {
+            "id": 3,
+            "nome": "Mamonas Assassinas",
+            "genero": "Rock",
+            "ano_nascimento": 1990,
+            "tipo": "Grupo"
+        }
+    ]
+}

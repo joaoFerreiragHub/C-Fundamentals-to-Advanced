@@ -1,0 +1,25 @@
+{
+  "formadores": [
+    {
+      "nome": "Pedro Remoaldo",
+      "modulo": "JavaScript"
+    }
+  ],
+  "formadndos": [
+    {
+      "nome": "Bernardo Sousa",
+      "localidade": "Vila Real",
+      "email": "bsousa@gmail.com"
+    },
+    {
+      "nome": "Joana Freitas",
+      "localidade": "Guimarães",
+      "email": "jfreitas@gmail.com"
+    },
+    {
+      "nome": "Jéssica Carvalho",
+      "localidade": "Bragal",
+      "email": "jcarvalho@gmail.com"
+    }
+  ]
+}

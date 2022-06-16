@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ex20.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formUtilizadores" novalidate>
+      <h1>Gestão de utilizadores</h1>
+      <section id="erros"></section>
+      <p>
+        <lable for="nome">Nome </lable>
+        <input type="text" id="nome" required maxlength="60" />
+      </p>
+      <p>
+        <small id="erroNome" class="erro"></small>
+        <lable for="email">Email </lable>
+        <input type="email" id="email" required maxlength="40" />
+      </p>
+      <p>
+        <lable for="telefone">Telefone </lable>
+        <input
+          type="tel"
+          id="telefone"
+          required
+          maxlength="9"
+          pattern="^[0-9]{9}$"
+        />
+      </p>
+      <small id="erroTelefone" class="erro"></small>
+      <p><input type="submit" id="btSubmit" value="Registar" /></p>
+    </form>
+    <section id="listaUtilizadores">
+      <table id="tabelaDados">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Operações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pedro Remoaldo</td>
+            <td>lalalalalal@gmail.com</td>
+            <td>123456789</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              Total de utilizadores: <span id="totalUtilizadores"></span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <scrip src="ex20.js"></scrip>
+  </body>
+</html>
