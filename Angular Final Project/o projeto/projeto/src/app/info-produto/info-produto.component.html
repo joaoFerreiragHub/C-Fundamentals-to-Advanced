@@ -1,0 +1,36 @@
+<div class="alinhaRoupa">
+  <p class="iWishlist">
+    <fa-icon
+      id="star"
+      class="star"
+      [icon]="aux"
+      (click)="adicionarLista()"
+    ></fa-icon>
+  </p>
+  <img
+    class="produtos"
+    src="/assets/Imagens/{{ infoProduto.foto_principal }}"
+  />
+  <img
+    class="produtosHiden"
+    src="/assets/Imagens/{{ infoProduto.foto_secundaria }}"
+  />
+  <p class="mProduto">{{ infoProduto.marca }}</p>
+  <p class="nProduto">{{ infoProduto.nome }}</p>
+  <p class="pProduto">{{ infoProduto.preco }}€</p>
+  <div class="alinharBotoes">
+    <div class="col-md-6 col-md-6">
+      <button type="button" class="btn btn-danger carrinho">
+        Adicionar ao Carrinho
+      </button>
+    </div>
+    <div class="col-md-6 col-md-6">
+      <a [routerLink]="['/produtos', infoProduto.id]">
+        <button type="button" class="btn btn-primary carrinho bInfo">
+          Mais <br />
+          Informação
+        </button>
+      </a>
+    </div>
+  </div>
+</div>

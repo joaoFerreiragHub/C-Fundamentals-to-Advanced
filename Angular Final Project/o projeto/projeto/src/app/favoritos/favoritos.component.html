@@ -1,0 +1,42 @@
+<div>
+  <div>
+    <p class="titulo">Wishlist</p>
+  </div>
+  <div class="alinhaRoupa">
+    <div class="container col-xs-12 col-md-6 col-lg-10 flexMeio">
+      <div>
+        <img
+          class="produtos"
+          src="/assets/Imagens/{{ favoritos.foto_principal }}"
+        />
+        <img
+          class="produtosHiden"
+          src="/assets/Imagens/{{ favoritos.foto_secundaria }}"
+        />
+      </div>
+      <div>
+        <p class="mProduto">{{ favoritos.marca }}</p>
+        <p class="nProduto">{{ favoritos.nome }}</p>
+        <p class="pProduto">{{ favoritos.preco }}€</p>
+      </div>
+      <div class="alinharBotoes">
+        <div class="col-md-6 col-md-6">
+          <button
+            type="button"
+            class="btn btn-danger carrinho"
+            (click)="remover()"
+          >
+            Remover
+          </button>
+        </div>
+        <div class="col-md-6 col-md-6">
+          <a [routerLink]="['/produtos', favoritos.id]">
+            <button type="button" class="btn btn-primary carrinho bInfo">
+              Detalhes
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

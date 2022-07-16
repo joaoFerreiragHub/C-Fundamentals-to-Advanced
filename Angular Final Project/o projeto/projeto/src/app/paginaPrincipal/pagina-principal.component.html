@@ -1,0 +1,32 @@
+<p class="saldos">saldos</p>
+<carousel>
+  <slide>
+    <img src="assets/slides/slider1.jpg" alt="first slide" class="slide" />
+  </slide>
+  <slide>
+    <img src="assets/slides/slider2.jpg" alt="second slide" class="slide" />
+  </slide>
+  <slide>
+    <img src="assets/slides/slider3.jpg" alt="third slide" class="slide" />
+  </slide>
+</carousel>
+
+<p class="destaques">destaques</p>
+
+<div>
+  <div class="row">
+    <table>
+      <tbody>
+        <tr class="destaquesBD">
+          <td *ngFor="let destaques of listaDestaque | slice: 0:8">
+            <a [routerLink]="['/produtos', destaques.id]">
+              <img
+                class="imgHover"
+                src="/assets/Imagens/{{ destaques.foto_principal }}"
+            /></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

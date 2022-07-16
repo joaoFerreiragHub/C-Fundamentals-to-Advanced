@@ -1,0 +1,356 @@
+<div class="master container darBorda">
+  <label class="titulo">Gestão de Produtos</label>
+  <div class="form container alinhaAoCentro">
+    <form [formGroup]="formProdutos" (ngSubmit)="inserirProduto()">
+      <div class="form-group row">
+        <small
+          *ngIf="
+            formProdutos.get('nome')!.touched &&
+            formProdutos.get('nome')!.invalid
+          "
+        >
+          * Todos os campos são de preenchimento obrigatório
+        </small>
+        <label for="produto" class="col-sm-4 col-form-label boxTitle"
+          >Produto:</label
+        >
+        <div class="col-sm-8">
+          <input type="text" id="nome" formControlName="nome" />
+        </div>
+      </div>
+
+      <small
+        *ngIf="
+          formProdutos.get('marca')!.touched &&
+          formProdutos.get('marca')!.invalid
+        "
+      >
+        * Todos os campos são de preenchimento obrigatório
+      </small>
+
+      <div class="form-group row">
+        <label for="marca" class="col-sm-4 col-form-label boxTitle"
+          >Marca:</label
+        >
+        <div class="col-sm-8">
+          <input type="text" id="marca" formControlName="marca" />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="tipo_de_produto" class="col-sm-4 col-form-label boxTitle"
+          >Tipo:</label
+        >
+        <div class="col-sm-8">
+          <select
+            class="caixa"
+            type="select"
+            id="tipo_de_produto"
+            formControlName="tipo_de_produto"
+          >
+            <option value="" disabled selected>
+              -- Selecionar um tipo de produto --
+            </option>
+            <option *ngFor="let item of listaTipo">{{ item.peca }}</option>
+          </select>
+        </div>
+      </div>
+      <small
+        *ngIf="
+          formProdutos.get('cor')!.touched && formProdutos.get('cor')!.invalid
+        "
+      >
+        * Todos os campos são de preenchimento obrigatório
+      </small>
+      <div class="form-group row">
+        <label for="cor" class="col-sm-4 col-form-label boxTitle">Cor:</label>
+        <div class="col-sm-8">
+          <input type="text" id="cor" formControlName="cor" />
+        </div>
+      </div>
+      <small
+        *ngIf="
+          formProdutos.get('preco')!.touched &&
+          formProdutos.get('preco')!.invalid
+        "
+      >
+        * Todos os campos são de preenchimento obrigatório
+      </small>
+
+      <div class="form-group row">
+        <label for="preco" class="col-sm-4 col-form-label boxTitle"
+          >Preço:</label
+        >
+
+        <div class="col-sm-8">
+          <input type="number" id="preco" formControlName="preco" />
+        </div>
+      </div>
+      <small
+        *ngIf="
+          formProdutos.get('descricao')!.touched &&
+          formProdutos.get('descricao')!.invalid
+        "
+      >
+        * Todos os campos são de preenchimento obrigatório
+      </small>
+      <div class="form-group row">
+        <label for="descricao" class="col-sm-4 col-form-label boxTitle"
+          >Descrição:</label
+        >
+        <div class="col-sm-8">
+          <input
+            class="descTextBox"
+            type="text"
+            id="descricao"
+            formControlName="descricao"
+          />
+        </div>
+      </div>
+
+      <div class="form-group row destaques">
+        <label for="destaques" class="col-sm-4 col-form-label boxTitled"
+          >Destaques</label
+        >
+        <label class="switch">
+          <input
+            type="checkbox"
+            checked
+            id="destaques"
+            formControlName="destaques"
+          />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="bnRegistar">
+        <input
+          type="submit"
+          value="Registar Produto"
+          class="btn btn-primary"
+          [disabled]="formProdutos.invalid"
+        />
+      </div>
+    </form>
+    <div class="pesquisa form-group">
+      <label class="boxTitle" for="pesquisa">Pesquisar nome do produto:</label>
+      &nbsp;
+      <input
+        type="text"
+        id="pesquisa"
+        name="nome"
+        [(ngModel)]="nome"
+        value="{{ nome }}"
+      />
+      &nbsp;
+      <button
+        type="button"
+        id="pesquisa"
+        name="nome"
+        (click)="pesquisaProduto(nome)"
+        class="btn btn-primary"
+      >
+        Pesquisar
+      </button>
+      &nbsp;
+      <button
+        type="button"
+        (click)="limpa_pesquisa(); nome = ''"
+        class="btn btn-primary"
+      >
+        Limpar Caixa
+      </button>
+      &nbsp;
+      <button
+        type="button"
+        (click)="reset_tabela(); nome = ''"
+        class="btn btn-primary"
+      >
+        Reset Tabela
+      </button>
+    </div>
+  </div>
+
+  <p *ngIf="listaProdutos.length === 0">
+    Não existem dados na tabela de Produtos.
+  </p>
+  <div class="container">
+    <table
+      class="table table-bordered table-hover"
+      id="tabelaDados"
+      *ngIf="listaProdutos.length !== 0"
+    >
+      <thead class="thead-dark tabelaAlinhar">
+        <tr>
+          <th>Foto</th>
+          <th>Marca</th>
+          <th>Produto</th>
+          <th>Tipo produto</th>
+          <th>Cor</th>
+          <th>Preço</th>
+          <th>Descrição</th>
+          <th>Destaque</th>
+          <th>Operações</th>
+        </tr>
+      </thead>
+      <tbody class="table-striped">
+        <tr *ngFor="let produto of listaProdutos">
+          <td>
+            <img
+              class="gerirPodutos"
+              src="./assets/Imagens/{{ produto.foto_principal }}"
+            />
+          </td>
+          <td>{{ produto.marca }}</td>
+          <td>{{ produto.nome }}</td>
+          <td>{{ produto.tipo_de_produto }}</td>
+          <td>{{ produto.cor }}</td>
+          <td>{{ produto.descricao }}</td>
+          <td>{{ produto.preco }}</td>
+          <td *ngIf="produto.destaques === true">
+            <fa-icon [icon]="faCheck"></fa-icon>
+          </td>
+          <td *ngIf="produto.destaques === false">
+            <fa-icon [icon]="faToggleOff"></fa-icon>
+          </td>
+          <td>
+            <a
+              href="javascript:void(0);"
+              class="tabela_livro_icone"
+              (click)="eliminaProduto(template, produto.id)"
+              >&#10005;</a
+            >
+            <!-- (click)="alteraProduto(produto.id!, $event)" -->
+            <!-- (click)="eliminaProduto(produto.id!)"    -->
+            <!--   (click)="getthisproductID(editProdutoModal, produto.id)" -->
+            &nbsp;<a href="javascript:void(0);" class="tabela_livro_icone"
+              >&#9998;</a
+            >
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="quantidade" colspan="8">
+            Total de produtos: {{ listaProdutos.length }}
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>O produto será eliminado de forma permanente, deseja continuar?</p>
+    <button type="button" class="btn btn-default" (click)="confirm()">
+      Sim
+    </button>
+    <button type="button" class="btn btn-primary" (click)="decline()">
+      Não
+    </button>
+  </div>
+</ng-template>
+
+<!-- <ng-template #editProdutoModal>
+  <div class="modal-body">
+    <form [formGroup]="editProfileForm" (ngSubmit)="alteraProduto()">
+      <div class="form-group row">
+        <label for="nome" class="col-sm-4 col-form-label">Produto</label>
+        <div class="col-sm-8">
+          <input
+            type="text"
+            [(ngModel)]="editar.nome"
+            class="form-control"
+            formControlName="nome"
+            id="nome"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="marca" class="col-sm-4 col-form-label">Marca</label>
+        <div class="col-sm-8">
+          <input
+            type="marca"
+            [(ngModel)]="editar.marca"
+            class="form-control"
+            formControlName="marca"
+            id="marca"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="tipo_de_produto" class="col-sm-4 col-form-label"
+          >Tipo</label
+        >
+        <div class="col-sm-8">
+          <input
+            type="text"
+            [(ngModel)]="editar.tipo_de_produto"
+            class="form-control"
+            formControlName="tipo_de_produto"
+            id="tipo_de_produto"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="cor" class="col-sm-4 col-form-label">Cor</label>
+        <div class="col-sm-8">
+          <input
+            type="text"
+            [(ngModel)]="editar.cor"
+            class="form-control"
+            formControlName="cor"
+            id="cor"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="preco" class="col-sm-4 col-form-label">Preço</label>
+        <div class="col-sm-8">
+          <input
+            type="text"
+            [(ngModel)]="editar.preco"
+            class="form-control"
+            formControlName="preco"
+            id="preco"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="descricao" class="col-sm-4 col-form-label">Descriçao</label>
+        <div class="col-sm-8">
+          <input
+            type="text"
+            [(ngModel)]="editar.descricao"
+            class="form-control"
+            formControlName="descricao"
+            id="descricao"
+          />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="destaques" class="col-sm-4 col-form-label">Destaques</label>
+        <div class="col-sm-8">
+          <input
+            type="text"
+            [(ngModel)]="editar.destaques"
+            class="form-control"
+            formControlName="destaques"
+            id="destaques"
+          />
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          (click)="modal.dismiss()"
+        >
+          Close
+        </button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </form>
+  </div>
+</ng-template> -->

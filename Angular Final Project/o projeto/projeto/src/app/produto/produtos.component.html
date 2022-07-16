@@ -1,0 +1,22 @@
+<p *ngIf="!produto">Sem informação</p>
+<div class="centerFlex" *ngIf="produto">
+  <div class="darBorda">
+    <div class="alignCenter">
+      <div>
+        <p class="marca">{{ produto.marca }}</p>
+        <p class="nome">{{ produto.nome }}</p>
+        <img
+          class="imagem"
+          src="/assets/Imagens/{{ produto.foto_principal }}"
+        /><img
+          class="imagem"
+          src="/assets/Imagens/{{ produto.foto_secundaria }}"
+        />
+      </div>
+
+      <p class="tipoProduto">{{ produto.tipo_de_produto }}</p>
+      <p class="preco">{{ produto.preco }}€</p>
+      <p class="descricao">{{ produto.descricao }}</p>
+    </div>
+  </div>
+</div>

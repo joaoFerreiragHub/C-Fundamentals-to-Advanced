@@ -1,0 +1,157 @@
+.form {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+.nome {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.bnRegistar {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.descTextBox {
+  width: 400px;
+  height: 150px;
+}
+
+.caixa {
+  height: 26px;
+}
+
+.boxTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 57px;
+  height: 27px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.destaques {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+
+.boxTitled {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.pesquisa {
+  padding-top: 20px;
+}
+.gerirPodutos {
+  height: 150px;
+  width: 110px;
+}
+
+/* .master {
+  border: 1px solid red;
+}
+/* .darBorda {
+  margin-bottom: 80px;
+  margin-top: 50px;
+  box-shadow: rgba(151, 31, 20, 0.18) 0px 54px 55px,
+    rgba(151, 31, 20, 0.12) 0px -12px 30px, rgba(151, 31, 20, 0.12) 0px 4px 6px,
+    rgba(151, 31, 20, 0.17) 0px 12px 13px, rgba(151, 31, 20, 0.09) 0px -3px 5px;
+  padding-left: 20px;
+} */
+*/ .tabelaAlinhar {
+  text-align: center;
+}
+
+.table {
+  text-align: center;
+  vertical-align: text-top;
+  font-size: 18px;
+}
+
+.quantidade {
+  padding-top: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.alinhaAoCentro {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+small {
+  color: red;
+  font-size: 18px;
+  font-weight: bolder;
+}

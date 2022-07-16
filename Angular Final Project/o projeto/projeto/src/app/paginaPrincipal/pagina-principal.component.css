@@ -1,0 +1,111 @@
+.imgHover:hover {
+  border: 2px solid red;
+}
+
+.foot {
+  display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.aviso {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.button > fa-icon {
+  border: none;
+  height: auto;
+  width: 30px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1700px) {
+  td > img {
+    width: 315px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 220px;
+    margin-left: 197px;
+    text-align: -webkit-center;
+  }
+  .imgHover {
+    height: 300px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 868px) {
+  .imgHover {
+    height: 250px;
+    width: 150px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .imgHover {
+    width: 140px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .imgHover {
+    width: 120px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  td > img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 420px) {
+  td > img {
+    width: 113px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  td > img {
+    width: 100px;
+  }
+}

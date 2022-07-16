@@ -1,0 +1,181 @@
+<header>
+  <div class="row">
+    <div class="col-xs-10 col-md-10 col-lg-10">
+      <nav class="navb">
+        <ul class="navbarP">
+          <div class="dropdown">
+            <li>
+              <a routerLink="/produtos" routerLinkActive="activa" class="drp"
+                >Homem</a
+              >
+              <div class="dropdown-content">
+                <div class="dropdown-content">
+                  <li>
+                    <a [routerLink]="['/paginaProdutos/Casacos/Homem']">
+                      Casacos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Camisas/Homem']">
+                      Camisas
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Calças/Homem']">
+                      Calças
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Sweatshirts/Homem']">
+                      Sweatshirts
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Polos/Homem']">
+                      Polos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Sapatos/Homem']">
+                      Sapatos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Todos/Homem']">
+                      Todos
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li>|</li>
+          <div class="dropdown">
+            <li>
+              <a routerLink="/produtos" routerLinkActive="activa" class="drp"
+                >Mulher</a
+              >
+              <div class="dropdown-content">
+                <div class="dropdown-content">
+                  <li>
+                    <a [routerLink]="['/paginaProdutos/Vestidos/Mulher']">
+                      Vestidos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Blusões/Mulher']">
+                      Blusões
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Coletes/Mulher']">
+                      Coletes
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Jeans/Mulher']">
+                      Jeans
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Saias/Mulher']">
+                      Saias
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Calções/Mulher']">
+                      Calções
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Lingerie/Mulher']">
+                      Lingerie
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Sapatos/Mulher']">
+                      Sapatos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Malas/Mulher']">
+                      Malas
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Todos/Mulher']">
+                      Todos
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li>
+            <a routerLink="" routerLinkActive="activa">
+              <img class="logo" src="/assets/Imagens/logo.png" alt="logo" />
+            </a>
+          </li>
+          <div class="dropdown">
+            <li>
+              <a routerLink="cards" routerLinkActive="activa" class="drp"
+                >Criança</a
+              >
+
+              <div class="dropdown-content">
+                <div class="dropdown-content">
+                  <li>
+                    <a [routerLink]="['/paginaProdutos/Menina/crianca']">
+                      Menina | 6-14 Anos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Menino/crianca']">
+                      Menino | 6-14 Anos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Bebef/crianca']">
+                      Bebé Menina | 3 Meses - 5 Anos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Bebem/crianca']">
+                      Bebé Menino | 3 Meses - 5 Anos
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Mini/crianca']"
+                      >Mini | 0-12 Meses
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </li>
+          </div>
+          <li>|</li>
+          <div class="dropdown">
+            <li>
+              <a routerLink="cards" routerLinkActive="activa" class="drp"
+                >Acessórios</a
+              >
+
+              <div class="dropdown-content">
+                <div class="dropdown-content">
+                  <li>
+                    <a [routerLink]="['/paginaProdutos/Malas/acessorios']">
+                      Malas
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Pulseiras/acessorios']">
+                      Pulseiras
+                    </a>
+                    <a [routerLink]="['/paginaProdutos/Anéis/acessorios']">
+                      Anéis
+                    </a>
+                  </li>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-xs-2 col-md-2 col-lg-2 addMar">
+      <app-botoes></app-botoes>
+    </div>
+  </div>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+  <footer>
+    <div class="footer-wrapper footer">
+      <div class="row">
+        <div>
+          <nav class="navFooter">
+            <ul class="navbarFooter">
+              <li><fa-icon [icon]="faFacebook"></fa-icon></li>
+              <li><fa-icon [icon]="faTwitter"></fa-icon></li>
+              <li><fa-icon [icon]="faInstagram"></fa-icon></li>
+              <li><fa-icon [icon]="faYoutube"></fa-icon></li>
+              <li><fa-icon [icon]="faPinterest"></fa-icon></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container foot">
+          <P class="paragrafo"
+            >O conteúdo deste site está protegido por copyright e é propriedade
+            da H & M Hennes & Mauritz AB. O conceito de negócio da H&M é a
+            oferta de moda e qualidade aos melhores preços, de forma
+            sustentável. Desde que foi fundada, em 1947, a H&M tornou-se uma das
+            maiores empresas de moda do mundo.</P
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>

@@ -1,0 +1,23 @@
+<div>
+  <ul class="navbar">
+    <div *ngIf="verificarLogin()" class="username">
+      Bem Vindo: {{ nomeUtilizador }}
+      <!-- Bem Vindo: {{ utilizador.nome }} -->
+    </div>
+    <li routerLink="/wishlist">
+      <fa-icon *ngIf="verificarLogin()" [icon]="faWishlist"></fa-icon>
+    </li>
+    <li routerLink="/perfil">
+      <fa-icon *ngIf="verificarLogin()" [icon]="faPerfil"></fa-icon>
+    </li>
+    <li (click)="openLogout()" routerLink="/home">
+      <fa-icon *ngIf="verificarLogin()" [icon]="faARight"></fa-icon>
+    </li>
+    <li routerLink="/registar" routerLinkActive="activa">
+      <fa-icon *ngIf="!verificarLogin()" [icon]="faRegisto"></fa-icon>
+    </li>
+    <li (click)="openLogin()">
+      <fa-icon *ngIf="!verificarLogin()" [icon]="faLog"></fa-icon>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,126 @@
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+}
+
+.centra {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.alinhaRoupa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.flex {
+  display: flex;
+  margin-top: 60px;
+}
+
+.cbTitulo {
+  margin: 0;
+  background-color: orangered;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.filtra {
+  text-align: left;
+  border: 1px solid;
+}
+
+.filtra > p {
+  padding-left: 5%;
+}
+
+.produtos {
+  position: absolute;
+}
+.produtos:hover {
+  opacity: 0;
+}
+
+.mProduto {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.nProduto {
+  text-align: center;
+  font-size: 18px;
+}
+
+.pProduto {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+.produto {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.produto > img {
+  margin-top: 15px;
+}
+
+.produto:hover {
+  border: 1px solid red;
+}
+
+.carrinho {
+  text-align: center;
+}
+
+.alinharBotoes {
+  display: flex;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bInfo {
+  width: 100%;
+}
+.iWishlist {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#star:focus {
+  color: red;
+  fill: red;
+}
+.verMais {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+/* .show-less {
+  height: 4rem;
+  overflow: hidden;
+  padding: 1rem;
+} */

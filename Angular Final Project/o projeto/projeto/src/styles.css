@@ -1,0 +1,259 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: "Open Sans", sans-serif !important;
+  height: 100%;
+}
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 130px !important;
+  margin-left: 278px;
+}
+
+footer {
+  bottom: 0;
+}
+
+.footer {
+  background-color: #e4e4e4;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navbarP {
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding-left: 23%;
+}
+
+.navbarFooter {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.navbar > li {
+  margin: 3px;
+}
+
+.paragrafo {
+  margin-bottom: 30px;
+  margin-right: 389px;
+  margin-left: 370px;
+  text-align: -webkit-center;
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbarFooter > li > fa-icon {
+  margin-top: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addMar {
+  margin-top: 20px;
+}
+.addMar > fa-icon {
+  margin: 10px;
+}
+
+.saldos {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 80px;
+  -webkit-transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.destaques {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+td.fitwidth {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.destaquesBD {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16%;
+  margin-right: 16%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.drp {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+}
+
+.drp:hover {
+  color: black;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.aviso {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.button > fa-icon {
+  border: none;
+  height: auto;
+  width: 30px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1700px) {
+  td > img {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 768px) {
+  td > img {
+    width: 200px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  td > img {
+    width: 154px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+@media screen and (max-width: 560px) {
+  td > img {
+    width: 125px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  td > img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 420px) {
+  td > img {
+    width: 113px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  td > img {
+    width: 100px;
+  }
+}

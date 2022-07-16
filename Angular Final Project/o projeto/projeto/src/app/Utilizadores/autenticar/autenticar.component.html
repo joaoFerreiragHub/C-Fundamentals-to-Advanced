@@ -1,0 +1,66 @@
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <img src="./assets/login/HM-Logo.jpg" id="icon" alt="User Icon" />
+    </div>
+    <form [formGroup]="formLogin" (ngSubmit)="fazerLogin()">
+      <input
+        type="text"
+        id="login"
+        class="fadeIn second"
+        [formControlName]="'email'"
+        name="login"
+        placeholder="Introduza o seu Email"
+      />
+      <small
+        *ngIf="
+          formLogin.get('email')!.touched && formLogin.get('email')!.invalid
+        "
+      >
+        <span class="avisoL" *ngIf="email.errors?.['required']"
+          >O campo é de preenchimento obrigatório!</span
+        >
+        <span class="avisoL" *ngIf="email.hasError('pattern')"
+          >O email inserido não tem formato correcto</span
+        >
+      </small>
+      <input
+        type="password"
+        id="password"
+        class="fadeIn third"
+        [formControlName]="'senha'"
+        name="login"
+        placeholder="Introduza a senha"
+      />
+      <small
+        *ngIf="
+          formLogin.get('senha')!.touched && formLogin.get('senha')!.invalid
+        "
+      >
+        <span class="avisoL" *ngIf="senha.errors?.['required']"
+          >O campo é de preenchimento obrigatório!</span
+        >
+
+        <span class="avisoL" *ngIf="senha.hasError('pattern')"
+          >A senha inserida não tem formato correcto</span
+        >
+      </small>
+
+      <button
+        type="submit"
+        class="btn btn-danger btn-lg"
+        [disabled]="formLogin.invalid"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>

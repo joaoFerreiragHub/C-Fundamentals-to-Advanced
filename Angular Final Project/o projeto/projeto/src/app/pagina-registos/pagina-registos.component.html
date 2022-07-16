@@ -1,0 +1,181 @@
+<section class="bg-image HM">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-3">Criar Conta</h2>
+
+              <form [formGroup]="formRegisto" (ngSubmit)="registoUtilizador()">
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Nome</label>
+                  <input
+                    type="text"
+                    [formControlName]="'nome'"
+                    id="nome"
+                    class="form-control form-control-lg"
+                  />
+
+                  <small
+                    *ngIf="
+                      formRegisto.get('nome')!.touched &&
+                      formRegisto.get('nome')!.invalid
+                    "
+                  >
+                    <span class="aviso" *ngIf="nome.errors?.['required']"
+                      >Introduza o seu nome</span
+                    >
+                    <span class="aviso" *ngIf="nome.hasError('minlength')"
+                      >O nome deve conter, no mínimo, 3 caracteres.</span
+                    >
+                  </small>
+                </div>
+
+                <label class="form-label" for="form3Example3cg"
+                  >Seu Email</label
+                >
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    [formControlName]="'email'"
+                    id="email"
+                    class="form-control form-control-lg"
+                  />
+                  <small
+                    *ngIf="
+                      formRegisto.get('email')!.touched &&
+                      formRegisto.get('email')!.invalid
+                    "
+                  >
+                    <span class="aviso" *ngIf="email.errors?.['required']"
+                      >Introduza o seu email</span
+                    >
+                    <span class="aviso" *ngIf="email.hasError('pattern')"
+                      >Email com formato inválido, tente de novo.
+                      (exemplo@gmail.com)</span
+                    >
+                  </small>
+                </div>
+
+                <label class="form-label" for="form3Example4cg">Senha</label>
+                <div class="form-outline mb-4">
+                  <input
+                    type="password"
+                    [formControlName]="'senha'"
+                    id="senha"
+                    class="form-control form-control-lg"
+                  />
+                  <small
+                    *ngIf="
+                      formRegisto.get('senha')!.touched &&
+                      formRegisto.get('senha')!.invalid
+                    "
+                  >
+                    <span class="aviso" *ngIf="senha.errors?.['required']"
+                      >Introduza a sua senha</span
+                    >
+                    <span class="aviso" *ngIf="senha.hasError('pattern')"
+                      >teste</span
+                    >
+                  </small>
+                </div>
+
+                <label class="form-label" for="form3Example4cdg">Morada</label>
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    [formControlName]="'morada'"
+                    id="morada"
+                    class="form-control form-control-lg"
+                  />
+                  <small
+                    *ngIf="
+                      formRegisto.get('morada')!.touched &&
+                      formRegisto.get('morada')!.invalid
+                    "
+                  >
+                    <span class="aviso" *ngIf="morada.errors?.['required']"
+                      >Introduza a sua morada</span
+                    >
+                    <span class="aviso" *ngIf="morada.hasError('minlength')"
+                      >Deve conter no minimo 5 caracteres.</span
+                    >
+                  </small>
+                </div>
+
+                <label class="form-label" for="form3Example4cdg"
+                  >Código Postal</label
+                >
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    [formControlName]="'codigoPostal'"
+                    id="codigoPostal"
+                    class="form-control form-control-lg"
+                  />
+
+                  <small
+                    *ngIf="
+                      formRegisto.get('codigoPostal')!.touched &&
+                      formRegisto.get('codigoPostal')!.invalid
+                    "
+                  >
+                    <span
+                      class="aviso"
+                      *ngIf="codigoPostal.errors?.['required']"
+                      >Introduza o seu Codigo Postal</span
+                    >
+                    <span class="aviso" *ngIf="codigoPostal.hasError('pattern')"
+                      >Deve conter 4 digitos seguidos de um "-" e 3 outros
+                      digitos. (4700-111)</span
+                    >
+                  </small>
+                </div>
+                <label class="form-label" for="form3Example4cdg">País</label>
+                <div class="form-outline mb-4">
+                  <input
+                    type="text"
+                    [formControlName]="'pais'"
+                    id="pais"
+                    class="form-control form-control-lg"
+                  />
+
+                  <small
+                    *ngIf="
+                      formRegisto.get('pais')!.touched &&
+                      formRegisto.get('pais')!.invalid
+                    "
+                  >
+                    <span class="aviso" *ngIf="pais.errors?.['required']"
+                      >Introduza o seu país.</span
+                    >
+                    <span class="aviso" *ngIf="pais.hasError('minlength')"
+                      >Deve conter no minimo 5 caracteres.</span
+                    >
+                  </small>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button
+                    type="submit"
+                    class="btn btn-danger btn-lg"
+                    [disabled]="formRegisto.invalid"
+                  >
+                    Registar
+                  </button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">
+                  Já tem conta?
+                  <a routerLink="/autenticar" class="fw-bold text-body"
+                    ><u>Faça Login Aqui</u></a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

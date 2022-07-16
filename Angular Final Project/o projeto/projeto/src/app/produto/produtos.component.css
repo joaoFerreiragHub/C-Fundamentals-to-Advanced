@@ -1,0 +1,41 @@
+.centerFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.alignCenter {
+  text-align: center;
+}
+.marca {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.nome {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.imagem {
+  margin-bottom: 25px;
+}
+.tipoProduto,
+.preco,
+.descricao {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.descricao {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.darBorda {
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 40px;
+  box-shadow: rgba(151, 31, 20, 0.18) 0px 54px 55px,
+    rgba(151, 31, 20, 0.12) 0px -12px 30px, rgba(151, 31, 20, 0.12) 0px 4px 6px,
+    rgba(151, 31, 20, 0.17) 0px 12px 13px, rgba(151, 31, 20, 0.09) 0px -3px 5px;
+}

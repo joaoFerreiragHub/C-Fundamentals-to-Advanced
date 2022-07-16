@@ -1,0 +1,109 @@
+.foot {
+  display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.aviso {
+  color: red;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.button > fa-icon {
+  border: none;
+  height: auto;
+  width: 30px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1700px) {
+  td > img {
+    width: 315px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-wrap: nowrap;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 220px;
+    margin-left: 197px;
+    text-align: -webkit-center;
+  }
+  .imgHover {
+    height: 200px;
+    width: 100px;
+  }
+  td > a > img {
+    height: 200px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  td > img {
+    width: 200px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+  .navbarP {
+    padding-left: 0%;
+  }
+  .imgHover {
+    height: 120px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  td > img {
+    width: 154px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+@media screen and (max-width: 560px) {
+  td > img {
+    width: 125px;
+  }
+  .paragrafo {
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: -webkit-center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  td > img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 420px) {
+  td > img {
+    width: 113px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  td > img {
+    width: 100px;
+  }
+}

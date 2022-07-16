@@ -1,0 +1,65 @@
+<div class="flex container">
+  <div class="col-lg-2">
+    <div class="filtra">
+      <p *ngIf="listatipo.length === 0">Não existem produtos nesta categoria</p>
+      <p class="cbTitulo">Tipo</p>
+      <p class="" *ngIf="listatipo.length !== 0"></p>
+      <p class="" *ngFor="let tipo of listatipo">
+        <input
+          (click)="getFiltraPeca(tipo)"
+          type="radio"
+          value="tipoProduto"
+          name="tipoProduto"
+        />
+        {{ tipo }}
+      </p>
+    </div>
+    <div class="filtra">
+      <p *ngIf="listaCores.length === 0">
+        Não existem produtos nesta categoria
+      </p>
+      <p class="cbTitulo">Cor</p>
+      <p class="" *ngIf="listaCores.length !== 0"></p>
+      <p class="" *ngFor="let listaCor of listaCores">
+        <input
+          (click)="getFiltraCor(listaCor)"
+          type="radio"
+          value="tipoProduto"
+          name="tipoProduto"
+        />
+        {{ listaCor }}
+      </p>
+    </div>
+  </div>
+  <div class="centra col-lg-1"></div>
+  <div class="centra col-lg-9">
+    <div>
+      <p class="titulo">{{ opcoes }}</p>
+      <p *ngIf="listafiltrada!.length === 0">
+        Não existem produtos nesta categoria
+      </p>
+      <p *ngIf="listafiltrada!.length !== 0"></p>
+      <p
+        class="paginaProdutosContainer"
+        *ngIf="listafiltrada!.length !== 0"
+      ></p>
+      <p>Total de Resultados: {{ listafiltrada!.length }}</p>
+    </div>
+    <div class="alinhaRoupa">
+      <section
+        class="produto"
+        *ngFor="let listaProduto of listafiltrada | slice: 0:max"
+      >
+        <app-info-produto [infoProduto]="listaProduto"></app-info-produto>
+      </section>
+    </div>
+    <button
+      type="button"
+      for="toggle"
+      (click)="alterarNumero()"
+      class="btn btn-dark verMais"
+    >
+      Ver Mais
+    </button>
+  </div>
+</div>
